@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: code-sherpa-db
+    environment:
+      POSTGRES_DB: code_sherpa
+      POSTGRES_USER: sherpa
+      POSTGRES_PASSWORD: sherpa_secret_2024
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sherpa -d code_sherpa"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:
