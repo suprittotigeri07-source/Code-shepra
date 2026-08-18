@@ -40,20 +40,18 @@ Once the servers are running, access the services using these links:
 ---
 
 ### 2. 🧠 Agent Memory & Context
-![Agent Memory and Context](docs/screenshots/02_agent_memory_and_context.png)
+![Agent Memory and Context](<img width="1920" height="1080" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/1bf9363a-abf6-48eb-af3b-cb156d2bc11e" />
+)
 *Memory dashboard showing developer-asserted Semantic Context Notes, auto-logged Episodic History, and similarity search.*
 
 ---
 
 ### 3. ⚙️ Real-Time Agent Execution Chain
-![Agent Execution Chain](docs/screenshots/03_agent_execution_chain.png)
+![Agent Execution Chain](<img width="1920" height="1080" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/49ac25b2-df49-4d39-b3c0-b955df8dd730" />
+)
 *Live streaming of query intent classification and multi-step reasoning steps powered by Server-Sent Events (SSE).*
 
 ---
-
-### 4. 🔍 Autonomous Tool Execution & Response
-![Agent Response and Tool Calls](docs/screenshots/04_agent_response_and_tool_call.png)
-*Agent dynamically executing tools (`search_code`, `read_file`, `list_files`) to synthesize cited codebase explanations.*
 
 ---
 
