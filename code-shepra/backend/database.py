@@ -103,8 +103,8 @@ def translate_sql(sql: str) -> str:
         # Remove pg specific column and index formats
         sql = sql.replace("content_tsv tsvector,", "content_tsv TEXT,")
         sql = sql.replace("content_tsv tsvector", "content_tsv TEXT")
-        sql = sql.replace("USING GIN(content_tsv)", "")
-        sql = sql.replace("USING ivfflat (embedding vector_cosine_ops)", "")
+        sql = sql.replace("USING GIN(content_tsv)", "(content_tsv)")
+        sql = sql.replace("USING ivfflat (embedding vector_cosine_ops)", "(embedding)")
         sql = sql.replace("USING ivfflat", "")
         sql = sql.replace("WITH (lists = ?)", "")
         # Replace $ placeholders with ?

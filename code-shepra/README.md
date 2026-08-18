@@ -95,3 +95,37 @@ git remote add origin https://github.com/<github-username>/<repository-name>.git
 # 6. Push code to GitHub
 git push -u origin main
 ```
+
+---
+
+## 🌐 Production Deployment Guide
+
+To deploy Code Sherpa to production, you will deploy the **React frontend** and **FastAPI backend** separately.
+
+### 1. Deploy the Backend (FastAPI + Database)
+You can deploy the backend to platforms like **Render**, **Railway**, or a **VPS** (AWS EC2, DigitalOcean).
+
+#### Render / Railway (Fastest)
+1. Link your GitHub repository.
+2. Set the root directory to `backend`.
+3. Set the Build Command to: `pip install -r requirements.txt`
+4. Set the Start Command to: `uvicorn main:app --host 0.0.0.0 --port $PORT`
+5. Configure Environment Variables:
+   - `DATABASE_URL`: Your production PostgreSQL URL (e.g. `postgresql+asyncpg://...`). If not set, it will automatically default to the SQLite file DB.
+   - `OLLAMA_BASE_URL`: Your hosted Ollama instance URL (or cloud provider endpoint).
+   - `CORS_ORIGINS`: Your deployed frontend URL (e.g. `https://code-sherpa.vercel.app`).
+
+### 2. Deploy the Frontend (React + Vite)
+The frontend can be deployed for free on **Vercel**, **Netlify**, or **GitHub Pages**.
+
+#### Vercel
+1. Link your GitHub repository.
+2. Import the repository in Vercel.
+3. Configure the settings:
+   - **Framework Preset**: `Vite`
+   - **Root Directory**: `frontend`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+4. Add the Environment Variable:
+   - `VITE_API_URL`: Your deployed FastAPI backend URL (e.g. `https://code-sherpa-backend.onrender.com`)
+
