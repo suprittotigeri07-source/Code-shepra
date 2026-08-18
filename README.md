@@ -35,19 +35,20 @@ Under the hood, Code Sherpa parses source files into semantic chunks, generates 
 
 ---
 
-## 🖥️ Application Preview
+ ## 📸 Application Screenshots / Outputs
 
-Code Sherpa provides a developer-focused three-panel interface for exploring an entire codebase.
+### 1. 🧭 Code Explorer Dashboard
+![Code Explorer Dashboard](docs/screenshots/01_code_explorer_welcome.png)
 
-### 📸 Output / Screenshots
+### 2. 🧠 Agent Memory & Context
+![Agent Memory and Context](docs/screenshots/02_agent_memory_and_context.png)
 
-#### 1. Code Sherpa Explorer Dashboard
+### 3. ⚙️ Real-Time Agent Execution Chain
+![Agent Execution Chain](docs/screenshots/03_agent_execution_chain.png)
 
-The main Code Sherpa interface provides a repository tree, semantic AI explorer, and code viewer in a single workspace.
+### 4. 🔍 Autonomous Tool Execution & Response
+![Agent Response and Tool Calls](docs/screenshots/04_agent_response_and_tool_call.png)
 
-![Code Sherpa Dashboard](docs/images/dashboard.png)
-
----
 
 #### 2. AI Semantic Code Exploration
 
