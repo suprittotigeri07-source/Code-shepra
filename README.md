@@ -33,7 +33,7 @@ Once the servers are running, access the services using these links:
 ## 📸 Application Screenshots / Outputs
 
 ### 1. 🧭 Code Explorer Dashboard
-![Code Explorer Dashboard](docs/screenshots/01_code_explorer_welcome.png)
+![Code Explorer Dashboard](C:\Users\supri\Pictures\Screenshots\Screenshot (40).png)
 *Clean 3-Panel Explorer layout with Repository Tree, Semantic Explorer Chat with quick prompts, and Code Viewer.*
 
 ---
